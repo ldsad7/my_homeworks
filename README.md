@@ -1,2 +1,2 @@
 # homework
-There are my homeworks for university
+There are my homeworks for the university
