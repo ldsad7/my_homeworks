@@ -1,5 +1,5 @@
 def func(name) :
-    f = open(str(name), 'r', encoding = 'utf-8')
+    f = open(name, 'r', encoding = 'utf-8')
     words = f.read().replace('\n', ' ').split(' ')
     f.close()
     return words
