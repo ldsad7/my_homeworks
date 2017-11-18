@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Статистика</title>
+</head>
+
+<body>
+<table border="1">
+<caption>Таблица</caption>
+<tr>
+<th>Имя</th><th>Place1</th><th>Place2</th><th>Place3</th>
+</tr>
+	{% for key, value in dic.items() %}
+		<tr> <td>{{ key }}</td> <td>{{ value[0][1] }}</td> <td>{{ value[1][1] }}</td> <td>{{ value[2][1] }}</td> </tr>
+	{% endfor %}
+</table>
+</body>
+
+</html>
