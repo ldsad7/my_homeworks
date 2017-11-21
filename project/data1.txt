@@ -1,2 +1,0 @@
-1. age: 21, language: чувашский, username: Эдик.
-2. age: 19, language: русский, username: Маша.
