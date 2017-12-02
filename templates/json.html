@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JSON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<style>
+	body {
+		background-image: url(static/new.jpg);
+		background-size: cover;
+		bacground-color: #c7b39b;
+	}
+</style>
+</head>
+<body><br>
+<div align="center"><h2>Здесь хранятся все введённые опрошенными данные в формате JSON</h2></div>
+
+<table border="0" class="table table-bordered">
+<h3>
+<DD align="center">JSON-овская Таблица</DD>
+</h3>
+<thead align="center">
+<tr class="table-active">
+	
+	<th class="active">ID</th>
+	<th>JSON1</th>
+	<th>JSON2</th>
+	<th>JSON3</th>
+	
+</tr>
+</thead>
+{% for i in range(1, json1|length + 1) %}
+
+	<tr class="bg-info">
+		<th>{{i}}</th> 
+		<td>{{json1[i-1]}}</td> 
+		<td>{{json2[i-1]}}</td> 
+		<td>{{json3[i-1]}}</td> 
+	</tr>
+
+{% endfor %}
+</table>
+
+</body>
+
+</html>
