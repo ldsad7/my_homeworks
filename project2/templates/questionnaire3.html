@@ -1,0 +1,111 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<title>Проверка</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="shortcut icon" href="/static/fox.ico" type="image/x-icon">
+<style>
+	body {
+	    padding: 5%;
+		background-image: url(static/gradient2.jpg);
+		background-size: cover;
+		background-color: #3670bd;
+	}
+	.blocks {
+		padding: 175px 200px 0px 0px;
+		width: 850px;
+		float: right;
+	}
+</style>
+</head>
+
+<body>
+<div align="center"><h2>Всё, это последняя анкета.<br>Выберите, пожалуйста, вариант, который Вы считаете правильным:</h2></div>
+<div class="blocks"><img src="{{url_for('static', filename='thankyou.png')}}" /></div>
+<br>
+<form action="/answers3" method="GET">
+<h5>
+	<p>В городе <select name="city" required>
+		<option value=""></option>
+		<option value="1">Москве</option>
+		<option value="0">Москва</option>
+		</select></p>
+		
+	<p>У реки <select name="river" required>
+		<option value=""></option>
+		<option value="1">Волги</option>
+		<option value="0">Волга</option>
+		</select></p>
+		
+	<p>На <select name="river" required>
+		<option value=""></option>
+		<option value="1">Москве-реке</option>
+		<option value="0">Москва-реке</option>
+		</select></p>
+
+	<p>В городе <select name="city" required>
+		<option value=""></option>
+		<option value="1">Великих Луках</option>
+		<option value="0">Великие Луки</option>
+		</select></p>
+		
+	<p>В деревне <select name="countryside" required>
+		<option value=""></option>
+		<option value="1">Ясной Поляне</option>
+		<option value="0">Ясная Поляна</option>
+		</select></p>
+
+	<p>Об озере <select name="lake" required>
+		<option value=""></option>
+		<option value="1">Байкале</option>
+		<option value="0">Байкал</option>
+		</select></p>
+		
+	<p>На острове <select name="island" required>
+		<option value=""></option>
+		<option value="1">Исландии</option>
+		<option value="0">Исландия</option>
+		</select></p>
+		
+	<p>На горе <select required name="mountain">
+		<option value=""></option>
+		<option value="1">Эльбрусе</option>
+		<option value="0">Эльбрус</option>
+		</select></p>
+		
+	<p>В горах <select required name="sierra">
+		<option value=""></option>
+		<option value="1">Гималаях</option>
+		<option value="0">Гималаи</option>
+		</select></p>
+
+	<p>В штате <select required name="state">
+		<option value=""></option>
+		<option value="1">Нью-Йорке</option>
+		<option value="0">Нью-Йорк</option>
+		</select></p>
+
+	<p>На площади <select required name="square">
+		<option value=""></option>
+		<option value="1">Лубянке</option>
+		<option value="0">Лубянка</option>
+		</select></p>
+
+	<p>На полуострове <select required name="peninsula">
+		<option value=""></option>
+		<option value="1">Крыме</option>
+		<option value="0">Крым</option>
+		</select></p>
+
+	<p><button type="submit" class="btn btn-secondary">Отправить</button></p>
+</h5>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

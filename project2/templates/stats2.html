@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Статистика</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="shortcut icon" href="/static/fox.ico" type="image/x-icon">
+<style>
+	body {
+		background-image: url(static/new.jpg);
+		background-size: cover;
+		background-color: #3670bd;
+	}
+</style>
+</head>
+
+<body>
+<br>
+<div align="center"><h2>Здесь хранятся данные теста</h2></div>
+
+<table class="table table-bordered table-responsive">
+
+<DD align="center"><h3>Таблица №2</h3></DD>
+<thead align="center">
+<tr class="table-active">
+	<th class="active">ID</th>
+	<th>city</th>
+	<th>river</th>
+	<th>countryside</th>
+	<th>lake</th>
+	<th>island</th>
+	<th>state</th>
+	<th>mountain</th>
+	<th>peninsula</th>
+	<th>sierra</th>
+	<th>square</th>
+</tr>
+</thead>
+{% for i in range(rows1 | length) %}
+	<tr class="bg-info">
+		<th>{{rows1[i][0]}}</th> 
+		<td>{{rows1[i][1]}}</td> 
+		<td>{{rows1[i][2]}}</td> 
+		<td>{{rows1[i][3]}}</td> 
+		<td>{{rows1[i][4]}}</td> 
+		<td>{{rows1[i][5]}}</td> 
+		<td>{{rows1[i][6]}}</td>
+		<td>{{rows1[i][7]}}</td>
+		<td>{{rows1[i][8]}}</td> 
+		<td>{{rows1[i][9]}}</td> 
+		<td>{{rows1[i][10]}}</td>  
+	</tr>
+{% endfor %}
+</table>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

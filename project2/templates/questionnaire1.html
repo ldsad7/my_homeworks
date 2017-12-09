@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<title>Анкета</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="shortcut icon" href="/static/fox.ico" type="image/x-icon">
+<style>
+	body {
+		padding: 5%;
+		background-image: url(static/gradient.jpg);
+		background-size: cover;
+		background-color: #3670bd;
+	}
+</style>
+</head>
+
+<body>
+
+<div align="center"><h2>Заполните, пожалуйста, следующую анкету:</h2></div>
+
+<form action="/answers1" method="GET"> <!-- Данные небольшое размера, так что можно обойтись GET -->
+<h5>
+<br>
+	<p>Ваше имя / ваш псевдоним: <input type="text" name="username" required placeholder="имя""></p>
+	<p>Ваш пол: 
+	<label class="radio-inline">
+		<input type="radio" name="gender" value="m" required> мужской
+		<input type="radio" name="gender" value="f"> женский
+	</label>
+	</p>
+	<p>Вам <input type="number" name="age" value="" min="6" max="99" required> лет/год<p>
+	<p>Вашим первым языком является <input type="text" name="language" value="русский" required> язык</p>
+	<p>Вы родились в городе/деревне/селе <input type="text" name="city" placeholder="название места" required></p>
+	<p>Ваше образование: 
+	<select name="education" required>
+		<option value=""></option>
+		<option value="0">законченное начальное общее</option>
+		<option value="1">законченное среднее (полное) общее</option>
+		<option value="2">законченное среднее профессиональное</option>
+		<option value="3">законченное высшее</option>
+	</select>
+	</p>
+	<p>Вы получаете/получали ваше образование в городе/деревне/селе <input type="text" name="city" placeholder="название места" required></p>
+	<p>По образованию Вы 
+	<select name="specialization" required>
+		<option value=""></option>
+		<option value="0">журналист/филолог/лингвист/учитель русского языка</option>
+		<option value="1">другое</option>
+	</select>
+	</p>
+	<p><button type="submit" class="btn btn-secondary">Отправить</button><p>
+
+</h5>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

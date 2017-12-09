@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<title>Тест</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="shortcut icon" href="/static/fox.ico" type="image/x-icon">
+<style>
+	body {
+		padding: 5%;
+		background-image: url("static/mountains.jpg");
+		background-size: cover;
+		background-color: #3670bd;
+	}
+</style>
+</head>
+
+<body>
+<div align="center"><h2>Теперь пройдите, пожалуйста, тест на знание географии и истории.</h2></div>
+<div align="center"><h2>Вставьте подходящий топоним в нужной форме:</h2></div>
+<form action="/answers2" method="GET"><br>
+<h5>
+	<p>Примеры заполнения: </p>
+	<p>МГУ был основан в 1755 году в городе <u>Москве</u></p>
+	<p>Ватикан находится в государстве <u>Ватикан</u></p>
+	<br>
+	<p>Зимние Олимпийские игры 2014 года проходили в городе <input type="text" name="city" value="" required></p>
+	<p>"Войну и мир" и "Анну Каренину" Л.Н. Толстой написал в деревне <input type="text" name="countryside" value="" required></p>
+	<p>Москва стоит на <input type="text" name="river" value="" required>-реке</p>
+	<p>Знаменитая «падающая башня» находится в городе <input type="text" name="city" value="" required></p>
+	<p>Волгоград располагается у реки <input type="text" name="river" value="" required></p>
+	<p>Комсомольск-на-Амуре расположен на левом берегу реки <input type="text" name="river" value="" required></p>
+	<p>По версии О. Ульяновой В. Ульянов взял свой псевдоним Ленин в честь среднесибирской реки <input type="text" name="river" value="" required></p>
+	<p>Административный центр Татарстана находится в городе <input type="text" name="city" value="" required></p>
+	<p>Самое глубокое озеро в мире и крупнейший природный резервуар пресной воды. Речь идёт об озере <input type="text" name="lake" value="" required></p>
+	<p>На исландском языке говорят на острове <input type="text" name="island" value="" required></p>
+	<p>Из города <input type="text" name="city" value="" required> образовалась Киевская Русь</p>
+	<p>Нью-Йорк находится в штате <input type="text" name="state" value="" required></p>
+	<p>Самая высокая точка России и Европы находится на горе <input type="text" name="mountain" value="" required></p>
+	<p>Эверест находится в горах <input type="text" name="sierra" value="" required></p>
+	<p>Пётр I считается основателем города <input type="text" name="city" value="" required></p>
+	<p>В 2014 году на полуострове <input type="text" name="peninsula" value="" required> появились две новые территориальные единицы РФ</p>
+	<p>Название московской площади <input type="text" name="square" value="" required> произошло от слова "луб"</p>
+	<p>Крупнейшая радиационная авария произошла в 1986 в СССР в городе <input type="text" name="city" value="" required></p>
+	<p>Дядя Федор, кот Матроскин и пёс Шарик из деревни <input type="text" name="countryside" value="" required></p>
+	<p>В 2013 году в российском городе <input type="text" name="city" value="" required> упал метеорит</p>
+	<p>Дед Мороз отправляется разносить подарки детям из своей резиденции, из города <input type="text" name="city" value="" required></p>
+	<p><button type="submit" class="btn btn-secondary">Отправить</button></p>
+</h5>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
