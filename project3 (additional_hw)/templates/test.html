@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Тест</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="shortcut icon" href="/static/fox.ico" type="image/x-icon">
+<style>
+	body {
+		padding: 5%;
+		background-image: url(static/sun.jpg);
+		background-size: cover;
+		background-color: #c7b39b;
+	}
+</style>
+</head>
+<body>
+<div align="center"><h2>Пройдите, пожалуйста, тест<br>Выберите правильный вариант в дореволюционной орфографии:</h2></div>
+<br>
+<form action="/get_answers" method="GET">
+<h5>
+	<p>Апрель <select name="yat" required>
+		<option value=""></option>
+		<option value="1">апрѣль</option>
+		<option value="0">апрель</option>
+		</select></p>
+		
+	<p>Гнев <select name="yat" required>
+		<option value=""></option>
+		<option value="1">гнѣвъ</option>
+		<option value="0">гневъ</option>
+		</select></p>
+		
+	<p>Отречься <select name="yat" required>
+		<option value=""></option>
+		<option value="1">отрѣчься</option>
+		<option value="0">отречься</option>
+		</select></p>
+		
+	<p>Чем <select name="yat" required>
+		<option value=""></option>
+		<option value="1">чѣмъ</option>
+		<option value="0">чемъ</option>
+		</select></p>
+
+	<p>Шесть <select name="yat" required>
+		<option value=""></option>
+		<option value="1">шѣсть</option>
+		<option value="0">шесть</option>
+		</select></p>
+		
+	<p>Герой <select name="yat" required>
+		<option value=""></option>
+		<option value="1">гѣрой</option>
+		<option value="0">герой</option>
+		</select></p>
+		
+	<p>Железо <select name="yat" required>
+		<option value=""></option>
+		<option value="1">желѣзо</option>
+		<option value="0">железо</option>
+		</select></p>
+	
+	<p>Орех <select name="yat" required>
+		<option value=""></option>
+		<option value="1">орѣхъ</option>
+		<option value="0">орехъ</option>
+		</select></p>
+		
+	<p>Цвет <select name="yat" required>
+		<option value=""></option>
+		<option value="1">цвѣтъ</option>
+		<option value="0">цветъ</option>
+		</select></p>
+		
+	<p>Медовар <select name="yat" required>
+		<option value=""></option>
+		<option value="1">мѣдоваръ</option>
+		<option value="0">медоваръ</option>
+		</select></p>
+		
+	<p><button type="submit" class="btn btn-secondary">Отправить</button></p>
+</h5>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
