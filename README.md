@@ -1,4 +1,4 @@
 # my_homeworks
-There are my homeworks for university
+There are my homeworks for the university.
 
-files: https://drive.google.com/open?id=1QRzCiyrF0BVZIEjv-RICHwvLMX17hv8o
+The posts and the comments: https://drive.google.com/drive/folders/1iK4snTKedVB-cs7c2rP0gZyz4P7Ab7j-?usp=sharing.
