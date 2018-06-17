@@ -25,15 +25,15 @@ def graph():
 
     access_token = request.args['access_token']
     
-    req = urllib.request.Request('https://api.vk.com/method/friends.get?count=5000&v=5.78&fields=id&access_token={}'.format(access_token))
+    req = urllib.request.Request('https://api.vk.com/method/friends.get?count=5000&v=5.78&fields=nickname&access_token={}'.format(access_token))
     response = urllib.request.urlopen(req)
     result = response.read().decode('utf-8')
     result = json.loads(result)
 
     friends = []
     
-    for elem in result['response']['items']
-        if elem['first_name'] != "DELETED":
+    for elem in result['response']['items']:
+        if elem['first_name'] != "DELETED" and elem['last_name'] != '':
             friends.append(elem['id'])
     
     req = urllib.request.Request('https://api.vk.com/method/users.get?v=5.78&access_token={}'.format(access_token))
@@ -85,7 +85,8 @@ def graph():
             result = json.loads(result)
             if 'response' in result and result['response']['items'] != []:
                 for elem in result['response']['items']:
-                    posts_stats[elem] += 1
+                    if elem in posts_stats:
+                        posts_stats[elem] += 1
     # /posts
 
     # post_comments
@@ -193,7 +194,8 @@ def graph():
             result = json.loads(result)
             if 'response' in result and result['response']['items'] != []:
                 for elem in result['response']['items']:
-                    photo_comments_stats[elem] += 1
+                    if elem in photo_comments_stats:
+                        photo_comments_stats[elem] += 1
     
     # /photos_comments
     
