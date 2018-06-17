@@ -5,4 +5,4 @@ The posts and the comments: https://drive.google.com/drive/folders/1iK4snTKedVB-
 
 The lemmas and dictionary for my telegram-bot @LdsadBot: https://drive.google.com/drive/folders/1Mv6tZbuFRUNn9VINgDadgw_Qb2KK_Qf-?usp=sharing
 
-The site with oriented graph of friends: http://www.vladisgrig.ru
+The site where you can build an oriented graph of friends in vk.com: http://www.vladisgrig.ru (but you need to wait 3-5 minutes).
